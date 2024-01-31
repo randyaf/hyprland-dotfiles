@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/warp-toggle", "custom/spotify", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
+    "modules-right": ["custom/warp-toggle", "custom/wallpaper-switcher", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
     // Modules configuration
      "hyprland/workspaces": {
         "disable-scroll": false,
@@ -211,6 +211,11 @@
 	"on-click": "playerctl --player spotify previous",
 	"on-click-middle": "playerctl --player spotify play-pause",
 	"on-click-right": "playerctl --player spotify next",
+	"tooltip": false
+    },
+    "custom/wallpaper-switcher": {
+        "format": "",
+	"on-click": "~/.config/waybar/scripts/wallpaper-switcher.sh",
 	"tooltip": false
     }
 }
