@@ -5,9 +5,9 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/window"],
+    "modules-left": ["hyprland/window", "network#speed"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/warp-toggle", "custom/wallpaper-switcher", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
+    "modules-right": ["custom/warp-toggle", "custom/spotify", "custom/wallpaper-switcher", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
     // Modules configuration
      "hyprland/workspaces": {
         "disable-scroll": false,
@@ -158,6 +158,20 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+    "network#speed": {
+	"interval": 1,
+	"format": "{ifname}",
+	"format-wifi": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+	"format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+	"format-disconnected": "󰌙",
+	"tooltip-format": "{ipaddr}",
+	"format-linked": "󰈁 {ifname} (No IP)",
+	"tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+	"tooltip-format-ethernet": "{ifname} 󰌘",
+	"tooltip-format-disconnected": "󰌙 Disconnected",
+	"max-length": 30,
+	"format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+	},
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}% {format_source}",

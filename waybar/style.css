@@ -64,7 +64,7 @@ button:hover {
 }
 
 #workspaces button.empty {
-    background-color: purple;
+    /*background-color: purple; */
     min-width: 0px;
 }
 
