@@ -5,9 +5,9 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/window", "network#speed"],
+    "modules-left": ["hyprland/window", "custom/toggle-fullscreen" ,"network#speed"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/warp-toggle", "custom/spotify", "custom/wallpaper-switcher", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
+    "modules-right": ["custom/vocab-mining-start", "custom/vocab-mining-end", "custom/vocab-mining-text", "custom/warp-toggle", "custom/spotify", "custom/wallpaper-switcher", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
     // Modules configuration
      "hyprland/workspaces": {
         "disable-scroll": false,
@@ -231,6 +231,27 @@
         "format": "",
 	"on-click": "~/.config/waybar/scripts/wallpaper-switcher.sh",
 	"tooltip": false
+    },
+    "custom/vocab-mining-start": {
+        "format": "",
+	"on-click": "~/Scripts/sunshine-mining/vocab-mining-start.sh",
+	"tooltip": false
+    },
+    "custom/vocab-mining-end": {
+        "format": "",
+	"on-click": "~/Scripts/sunshine-mining/vocab-mining-end.sh",
+	"tooltip": false
+    },
+    "custom/vocab-mining-text": {
+        "format": "",
+	"on-click": "~/Scripts/sunshine-mining/vocab-mining-text.sh",
+	"tooltip": false
+    },
+    "custom/toggle-fullscreen": {
+        "format": "",
+	"on-click": "~/Scripts/sunshine-mining/toggle-fullscreen.sh",
+	"tooltip": false
     }
+
 }
 
