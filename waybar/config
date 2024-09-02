@@ -1,13 +1,13 @@
 {
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 19, // Waybar height (to be removed for auto height)
+    "height": 28, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/window", "custom/toggle-fullscreen" ,"network#speed"],
+    "modules-left": ["hyprland/window", "network#speed"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/vocab-mining-start", "custom/vocab-mining-end", "custom/vocab-mining-text", "custom/warp-toggle", "custom/spotify", "custom/wallpaper-switcher", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
+    "modules-right": ["custom/warp-toggle", "custom/spotify", "custom/wallpaper-switcher", "pulseaudio", "network", "cpu", "memory", "temperature", "clock", "tray", "custom/power-button"],
     // Modules configuration
      "hyprland/workspaces": {
         "disable-scroll": false,
